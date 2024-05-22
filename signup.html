@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./login.html">
+      <fieldset>
+        <center>
+          <legend>SIGNUP FORM</legend>
+          <br />
+          <label for="username">Username/Email* :</label>
+          <input type="text" name="username" id="username" />
+          <br /><br />
+          <label for="pswd">Password* :</label>
+          <input
+            type="password"
+            name="password"
+            id="pswd"
+            pattern="[a-zA-Z]{7,}"
+          />
+          <br /><br />
+          <label for="pswd1">Retype Password* :</label>
+          <input
+            type="password"
+            name="repassword"
+            id="pswd1"
+            pattern="[a-zA-Z]{7,}"
+          />
+          <br /><br />
+          <input type="submit" value="signup" />
+          <input type="submit" value="Already have an account" />
+        </center>
+      </fieldset>
+    </form>
+  </body>
+</html>
