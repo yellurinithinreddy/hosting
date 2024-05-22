@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Application Form</legend>
+        <label for="firstname">Name* :</label>
+        <input type="text" name="fname" id="firstname" />
+        <label for="email">Email* :</label>
+        <input type="email" name="email" id="email" />
+        <br /><br />
+
+        <label for="pswd">Password* :</label>
+        <input type="password" name="password" id="pswd" />
+        <label for="dob">Date of birth* :</label>
+        <input type="date" name="dob" id="dob" />
+        <br /><br />
+        <label for="mob">Mobile* :</label>
+        <input type="tel" name="mobile" id="mob" pattern="(?=/*[0-9]).{10}" />
+        <label for="status">Status* :</label>
+        <select name="studentstatus" id="status">
+          <option value="Student">Student</option>
+          <option value="Employee">Employee</option>
+          <option value="Graduated">Graduated</option>
+        </select>
+        <br /><br />
+        <label for="gen">Gender* :</label>
+        <br /><br />
+        <input type="radio" name="gender" id="gender" value="Male" />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" value="Female" />
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="gender" value="Others" />
+        <label for="gender">Others</label>
+        <br /><br />
+        <label for="address">Address* :</label>
+        <input type="text" name="Address" id="address" />
+        <label for="land">Landmark* :</label>
+        <input type="text" name="Landmark" id="land" />
+        <br /><br />
+        <label for="country">Country* :</label>
+        <select name="Country" id="country">
+          <option value="india">India</option>
+          <option value="Australia">Australia</option>
+          <option value="Ireland">Ireland</option>
+          <option value="England">England</option>
+        </select>
+        <label for="state">State* :</label>
+        <select name="state" id="state">
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        </select>
+        <label for="city">City* :</label>
+        <select name="city" id="city">
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Banglore">Banglore</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Vijayawada">Vijayawada</option>
+        </select>
+        <br /><br />
+        <label for="doc">Documents :</label>
+        <br /><br />
+        <label for="idp">ID proof* :</label>
+        <input type="file" name="aadhar" id="idp" />
+        <br /><br />
+        <label for="photo">Passport Photo* :</label>
+        <input type="file" name="photo" id="photo" accept="image/*" />
+        <br /><br />
+        <label for="resume">Resume/CV* :</label>
+        <input type="file" name="resume" id="resume" />
+        <br /><br />
+        <label for="skills">Skills* :</label>
+        <br /><br />
+        <input type="checkbox" name="skill1" id="skill1" value="Python" />
+        <label for="skill1">Python</label>
+        <input type="checkbox" name="skill2" id="skill2" value="Java" />
+        <label for="skill2">Java</label>
+        <input type="checkbox" name="skill3" id="skill3" value="javascript" />
+        <label for="skill3">JavaScript</label>
+        <input type="checkbox" name="skill4" id="skill4" value="Ruby" />
+        <label for="skill4">Ruby</label>
+        <br /><br />
+        <input type="submit" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
