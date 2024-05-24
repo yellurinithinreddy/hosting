@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        position: sticky;
+        top: 0%;
+        background-color: white;
+      }
+      .br {
+        padding: 8px 16px;
+        line-height: 22.5px;
+        letter-spacing: 4px;
+        text-align: start;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+      }
+      .nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: -2.6%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+      }
+      .pro {
+        padding: 8px 16px;
+        margin-right: 1%;
+        line-height: 22.5px;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .abo {
+        padding: 8px 16px;
+        margin-right: 1%;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .con {
+        padding: 8px 16px;
+        margin-right: 1%;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .img1 {
+        margin-top: 0.5%;
+        width: 97.7vw;
+        height: 115.2vh;
+        margin-left: 0.2%;
+      }
+      .br1 {
+        padding: 8px 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 54px;
+        background-color: rgba(0, 0, 0, 0.723);
+        opacity: 1;
+        color: white;
+      }
+      .fb1 {
+        display: flex;
+        justify-content: center;
+        margin-top: -28%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 36px;
+        letter-spacing: 4px;
+      }
+      .br2 {
+        display: flex;
+        align-items: center;
+        margin-left: 1%;
+      }
+      .s2 {
+        padding: 32px 16px;
+        width: 94vw;
+        height: 15vh;
+        margin-top: 24%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 15px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 1%;
+      }
+      .images {
+        width: 97.6vw;
+        height: 70vh;
+        padding: 30px 1px;
+        margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2% 1%;
+        justify-content: center;
+        margin-top: -1.5%;
+      }
+      .sec2 {
+        padding: 32px 16px;
+      }
+      .sec22 {
+        padding: 8px 16px;
+        font-size: 15px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: -2%;
+      }
+      .para {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-left: 1%;
+      }
+      .found {
+        padding: 6px;
+        display: flex;
+        justify-content: space-around;
+        width: 97vw;
+        height: 66vh;
+        gap: 10px 10px;
+      }
+      .nam1 {
+        padding: 8px 16px;
+        font-size: 24px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .pos {
+        padding: 8px 16px;
+        font-size: 15px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: start;
+        color: gray;
+      }
+      .para1 {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .contact {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 8px 16px;
+        background-color: rgb(128, 128, 128);
+        opacity: 0.9;
+      }
+      .formcont {
+        height: 50vh;
+        padding: 16px 32px;
+      }
+      .conta {
+        padding: 8px 16px;
+        font-size: 24px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 2%;
+        margin-left: -1%;
+      }
+      input {
+        border: 1px solid black;
+        padding: 8px 16px;
+        width: 97.7%;
+      }
+      button {
+        border: 1px solid black;
+        padding: 8px 16px;
+        width: 15%;
+        color: white;
+        background-color: black;
+      }
+      .footer {
+        border: 1px solid black;
+        width: 98.3vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        background-color: black;
+      }
+      .summer1{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/summer.jpg);
+      }
+      .summer2{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/brick.jpg);
+      }
+      .summer3{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/renovated.jpg);
+      }
+      .summer4{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/barn.jpg);
+      }
+      .summer5{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/summer1.jpg);
+      }
+      .summer6{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/brick1.jpg);
+      }
+      .summer7{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/renovated1.jpg);
+      }
+      .summer8{
+        border: 1px solid black;
+        width: 23%;
+        height: 50%;
+        background-image: url(../multimedia/barn1.jpg);
+      }
+    </style>
+  </head>
+  <body >
+    <div class="navbar">
+      <div class="br">
+        <span><a style="color: black;text-decoration:none;" href="#Home"><b>BR</b> Architects</a></span>
+      </div>
+      <div class="nav">
+        <span class="pro"><a style="color: black; text-decoration:none" href="#Projects">Projects</a></span>
+        <span class="abo"><a style="color: black; text-decoration:none" href="#About">About</a></span>
+        <span class="con"><a style="color: black; text-decoration:none" href="#Contact">Contact</a></span>
+      </div>
+    </div>
+    <div class="img1" id="Home">
+      <img
+        style="width: 100%; height: 100%"
+        src="../multimedia/architect.jpg"
+        alt=""
+      />
+    </div>
+    <div class="fb1">
+      <span class="br1"><b>BR</b></span>
+      <span style="color: white" class="br2">Architects</span>
+    </div>
+    <div class="s2" id="Projects">
+      <h1>Projects</h1>
+    </div>
+    <div class="images">
+      <img width="23%" height="50%" src="../multimedia/summer.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/renovated.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/barn.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/brick.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/summer1.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/renovated1.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/barn1.jpg" alt="" />
+      <img width="23%" height="50%" src="../multimedia/brick1.jpg" alt="" />
+    </div>
+    <div class="sec2" id="About">
+      <div class="sec22"><h1>About</h1></div>
+      <div class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum aliquam
+        quis ad et blanditiis necessitatibus illum officiis sunt hic impedit
+        iste possimus placeat ea sit, quae assumenda dignissimos commodi odio.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum aliquam
+        quis ad et blanditiis necessitatibus illum officiis sunt hic impedit
+        iste possimus placeat ea sit, quae assumenda dignissimos commodi odio.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum aliquam
+        quis ad et blanditiis necessitatibus illum officiis sunt hic impedit
+        iste possimus placeat ea sit, quae assumenda dignissimos commodi odio.
+      </div>
+    </div>
+    <div class="found">
+      <div class="peo">
+        <img width="100%" height="50%" src="../multimedia/ceo.jpg" alt="" />
+        <div class="nam1">John Doe</div>
+        <div class="pos">CEO & Founder</div>
+        <div class="para1">
+          <p style="padding: 8px 16px">
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum .
+          </p>
+        </div>
+        <div class="contact">Contact</div>
+      </div>
+      <div class="peo">
+        <img width="100%" height="50%" src="../multimedia/archii.jpg" alt="" />
+        <div class="nam1">Jane Doe</div>
+        <div class="pos">Architect</div>
+        <div class="para1">
+          <p style="padding: 8px 16px">
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum .
+          </p>
+        </div>
+        <div class="contact">Contact</div>
+      </div>
+      <div class="peo">
+        <img
+          width="100%"
+          height="50%"
+          src="../multimedia/mikearchii.jpg"
+          alt=""
+        />
+        <div class="nam1">Mike Ross</div>
+        <div class="pos">Architect</div>
+        <div class="para1">
+          <p style="padding: 8px 16px">
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum .
+          </p>
+          <div class="contact">Contact</div>
+        </div>
+      </div>
+      <div class="peo">
+        <img
+          width="100%"
+          height="50%"
+          src="../multimedia/danarchii.jpg"
+          alt=""
+        />
+        <div class="nam1">Dan star</div>
+        <div class="pos">Architect</div>
+        <div class="para1">
+          <p style="padding: 8px 16px">
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum .
+          </p>
+          <div class="contact">Contact</div>
+        </div>
+      </div>
+    </div>
+    <div class="formcont" id="Contact">
+      <div class="conta">Contact</div>
+      <p
+        style="margin-left: 0.1%"
+        style="font-size: 15px"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+      >
+        Lets get in touch and talk about your next project.
+      </p>
+      <form style="display: flex; flex-direction: column; gap: 15px">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <input type="text" placeholder="Comment" />
+        <button>SEND MESSAGE</button>
+      </form>
+    </div>
+    <img
+      style="margin-top: 3%; margin-left: 0.5%"
+      src="../multimedia/archicar.jpg"
+      alt=""
+    />
+    <div class="footer">
+      <p>Powered by <a
+        style="color: white"
+        href="https://www.w3schools.com/w3css/default.asp"
+        target="_blank"
+      >
+        w3.css</p>
+      </a>
+    </div>
+  </body>
+</html>
