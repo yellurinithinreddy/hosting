@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7f1a9230de.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      .navbar {
+        height: 100vh;
+        width: 8.5vw;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        top: 1%;
+      }
+      .nav {
+        border: 1px solid black;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+      }
+      .main {
+        border: 1px solid black;
+        width: 89vw;
+        height: 100%;
+        margin-left: 9%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        align-content: space-between;
+      }
+      .middle {
+        border: 1px solid black;
+        width: 89vw;
+        height: 100%;
+        margin-left: 9%;
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .part {
+        height: 50%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .achie {
+        border: 1px solid black;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+      }
+      .down {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+      }
+      .price {
+        border: 1px solid black;
+        height: 70vh;
+        width: 60vw;
+        margin-left: 23%;
+        margin-top: 1%;
+        display: flex;
+        gap: 20px;
+      }
+      .p1 {
+        height: 10%;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-bottom: -4%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .dollar {
+        border: 1px solid black;
+        width: 100%;
+        height: 20%;
+        margin-top: 4%;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 50%;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .reputation {
+        border: 1px solid black;
+        width: 60vw;
+        height: 100%;
+        margin-left: 23%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .rebeca {
+        border: 1px solid black;
+        width: 60vw;
+        height: 100%;
+        margin-left: 23%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: left;
+      }
+      .photos {
+        border: 1px solid black;
+        width: 60vw;
+        height: 100%;
+        margin-left: 23%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .pictures {
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 10px;
+      }
+      .section1 {
+        border: 1px solid black;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .section2 {
+        border: 1px solid black;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .contact {
+        border: 1px solid black;
+        width: 60vw;
+        height: 100%;
+        margin-left: 23%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .contsec1 {
+        border: 1px solid black;
+        width: 100%;
+        height: 30%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        width: 98.5%;
+        height: 45px;
+      }
+      .footer {
+        border: 1px solid black;
+        width: 60vw;
+        height: 30vh;
+        margin-left: 23%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        color: gray;
+      }
+      .button1 {
+        width: 220px;
+        height: 50px;
+      }
+      @media screen and (max-width: 600px) {
+        .navbar {
+          height: 100vh;
+          width: 8.5vw;
+          border: 1px solid black;
+          display: none;
+          flex-direction: column;
+          background-color: black;
+          position: fixed;
+          top: 1%;
+        }
+        .nav {
+          border: 1px solid black;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: space-between;
+        }
+        .main {
+          border: 1px solid black;
+          width: 89vw;
+          height: 100%;
+          margin-left: 9%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          align-content: space-between;
+        }
+        .middle {
+          border: 1px solid black;
+          width: 89vw;
+          height: 100%;
+          margin-left: 9%;
+          margin-top: 8%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .part {
+          height: 50%;
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .achie {
+          border: 1px solid black;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: white;
+          gap: 40px;
+        }
+        .down {
+          width: 200px;
+          height: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          font-size: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          background-color: white;
+        }
+        .price {
+          border: 1px solid black;
+          height: 100%;
+          width: 60vw;
+          margin-left: 27%;
+          margin-top: 1%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .p1 {
+          height: 10%;
+          width: 100%;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          margin-bottom: -4%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .dollar {
+          border: 1px solid black;
+          width: 100%;
+          height: 20%;
+          margin-top: 4%;
+        }
+        table,
+        tr,
+        td,
+        th {
+          border: 1px solid black;
+          border-collapse: collapse;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .reputation {
+          border: 1px solid black;
+          width: 60vw;
+          height: 100%;
+          margin-left: 23%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .rebeca {
+          border: 1px solid black;
+          width: 60vw;
+          height: 100%;
+          margin-left: 23%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          float: left;
+        }
+        .photos {
+          border: 1px solid black;
+          width: 60vw;
+          height: 100%;
+          margin-left: 23%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .pictures {
+          border: 1px solid black;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .section1 {
+          border: 1px solid black;
+          width: 150%;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .section2 {
+          border: 1px solid black;
+          width: 150%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .contact {
+          border: 1px solid black;
+          width: 60vw;
+          height: 100%;
+          margin-left: 23%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .contsec1 {
+          border: 1px solid black;
+          width: 130%;
+          height: 30%;
+          margin-top: 10%;
+          display: flex;
+          margin-left: -5%;
+          flex-direction: column;
+        }
+        input {
+          width: 120%;
+          height: 45px;
+          margin-left: -8%;
+        }
+        .footer {
+          border: 1px solid black;
+          width: 60vw;
+          height: 30vh;
+          margin-left: 23%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-top: 5%;
+          display: flex;
+          margin-left: 18%;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          color: gray;
+        }
+        body {
+          display: flex;
+          flex-direction: column;
+          margin-left: -5%;
+          background-color: black;
+        }
+        .button1 {
+          width: 200px;
+          height: 50px;
+          margin-left: -8%;
+        }
+        .mobnav {
+          width: 89vw;
+          height: 5vh;
+          display: flex;
+          color: white;
+          margin-left: 7%;
+          justify-content: space-around;
+          align-items: center;
+          position: sticky;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div class="mobnav">
+      <a
+        class="mobnav"
+        style="text-decoration: none; color: white"
+        href="#home"
+      >
+        <div>Home</div>
+      </a>
+      <a
+        class="mobnav"
+        style="text-decoration: none; color: white"
+        href="#about"
+      >
+        <div>About</div>
+      </a>
+      <a
+        class="mobnav"
+        style="text-decoration: none; color: white"
+        href="#image"
+      >
+        <div>Photos</div>
+      </a>
+      <a
+        class="mobnav"
+        style="text-decoration: none; color: white"
+        href="#phone"
+      >
+        <div>Contact</div>
+      </a>
+    </div>
+    <div class="navbar">
+      <img src="../multimedia/john.jpg" alt="" width="100%" height="100%" />
+      <a style="text-decoration: none" class="nav" href="#home">
+        <div>
+          <i
+            class="fa-solid fa-house-chimney"
+            style="font-size: 200%; color: white"
+          ></i>
+          <p
+            style="
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 12px;
+              color: white;
+            "
+          >
+            HOME
+          </p>
+        </div>
+      </a>
+      <a style="text-decoration: none" href="#about" class="nav">
+        <div class="nav">
+          <i class="fa-solid fa-user" style="font-size: 200%; color: white"></i>
+          <p
+            style="
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 12px;
+              color: white;
+            "
+          >
+            ABOUT
+          </p>
+        </div>
+      </a>
+      <a style="text-decoration: none" href="#image" class="nav">
+        <div class="nav">
+          <i style="font-size: 200%; color: white" class="fa-solid fa-eye"></i>
+          <p
+            style="
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 12px;
+              color: white;
+            "
+          >
+            PHOTOS
+          </p>
+        </div>
+      </a>
+      <a style="text-decoration: none" href="#phone" class="nav">
+        <div class="nav">
+          <i
+            style="font-size: 200%; color: white"
+            class="fa-solid fa-envelope"
+          ></i>
+          <p
+            style="
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 12px;
+              color: white;
+            "
+          >
+            CONTACT
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="main" id="home">
+      <div
+        style="
+          font-size: 64px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          line-height: 96px;
+          color: white;
+          margin-top: 3%;
+          text-align: center;
+        "
+      >
+        I'm John Doe.
+      </div>
+      <p
+        style="
+          font-size: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          line-height: 22.5px;
+          color: white;
+        "
+      >
+        Photographer and Web Designer.
+      </p>
+      <img width="100%" src="../multimedia/bigimg.jpg" alt="" />
+    </div>
+    <div>
+      <div class="middle" id="about">
+        <div
+          style="
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 45px;
+            color: white;
+          "
+        >
+          My Name
+        </div>
+        <p
+          style="
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 22.5px;
+            color: gray;
+          "
+        >
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div
+          style="
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 36px;
+            color: white;
+          "
+        >
+          My Skills
+        </div>
+        <div
+          style="
+            font-size: 15px;
+            line-height: 22.5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 4px;
+            color: gray;
+          "
+        >
+          Photography
+        </div>
+        <div style="width: 100%; height: 30px; background-color: white">
+          <div
+            style="
+              width: 95%;
+              height: 100%;
+              border: 1px solid black;
+              background-color: rgba(128, 128, 128, 0.622);
+            "
+          ></div>
+        </div>
+        <div
+          style="
+            font-size: 15px;
+            line-height: 22.5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 4px;
+            color: gray;
+          "
+        >
+          Web Design
+        </div>
+        <div style="width: 100%; height: 30px; background-color: white">
+          <div
+            style="
+              width: 85%;
+              height: 100%;
+              border: 1px solid black;
+              background-color: rgba(128, 128, 128, 0.622);
+            "
+          ></div>
+        </div>
+        <div
+          style="
+            font-size: 15px;
+            line-height: 22.5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 4px;
+            color: gray;
+          "
+        >
+          Photoshop
+        </div>
+        <div style="width: 100%; height: 30px; background-color: white">
+          <div
+            style="
+              width: 75%;
+              height: 100%;
+              border: 1px solid black;
+              background-color: rgba(128, 128, 128, 0.622);
+            "
+          ></div>
+        </div>
+        <div class="achie">
+          <div class="part">
+            <div
+              style="
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+            >
+              11+
+            </div>
+            Partners
+          </div>
+          <div class="part">
+            <div
+              style="
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+            >
+              55+
+            </div>
+            Projects Done
+          </div>
+          <div class="part">
+            <div
+              style="
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+            >
+              89+
+            </div>
+            Happy Clients
+          </div>
+          <div class="part">
+            <div
+              style="
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+            >
+              150+
+            </div>
+            Meetings
+          </div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-download"></i>
+          <div
+            style="
+              font-size: 15px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            "
+          >
+            Download Resume
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          width: 89vw;
+          height: 6vh;
+          border: 1px solid black;
+          margin-left: 9%;
+          display: flex;
+          align-items: center;
+          font-size: 24px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-top: 2%;
+          color: white;
+        "
+      >
+        My Price
+      </div>
+    </div>
+    <div class="price">
+      <table style="background-color: white; color: gray">
+        <tr style="background-color: gray">
+          <th style="height: 20%; font-size: 24px; color: white">Basic</th>
+        </tr>
+        <tr>
+          <td style="height: 10%">Web Design</td>
+        </tr>
+        <tr>
+          <td style="height: 10%">Photography</td>
+        </tr>
+        <tr>
+          <td style="height: 10%">5GB Storage</td>
+        </tr>
+        <tr>
+          <td style="height: 10%">Mail Support</td>
+        </tr>
+        <tr>
+          <td style="height: 22%">
+            <div style="font-size: 30px">$10</div>
+
+            per month
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div
+              style="
+                height: 40px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                margin-left: 35%;
+              "
+            >
+              Sign Up
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table style="color: gray">
+        <tr style="background-color: gray; color: white">
+          <th style="height: 20%; font-size: 24px">Pro</th>
+        </tr>
+        <tr style="background-color: white">
+          <td style="height: 10%">Web Design</td>
+        </tr>
+        <tr style="background-color: white">
+          <td style="height: 10%">Photography</td>
+        </tr>
+        <tr style="background-color: white">
+          <td style="height: 10%">50GB Storage</td>
+        </tr>
+        <tr style="background-color: white">
+          <td style="height: 10%">Endless Support</td>
+        </tr>
+        <tr style="background-color: white">
+          <td style="height: 22%">
+            <div style="font-size: 30px">$ 25</div>
+
+            per month
+          </td>
+        </tr>
+        <tr style="background-color: white">
+          <td>
+            <div
+              style="
+                height: 40px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                margin-left: 35%;
+              "
+            >
+              Sign Up
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="reputation">
+      <div
+        style="
+          margin-top: 5%;
+          font-size: 24px;
+          line-height: 36px;
+          border: 1px solid black;
+          color: white;
+        "
+      >
+        My Reputation
+      </div>
+      <img
+        style="border-radius: 50%; margin-top: 1%; float: left"
+        src="../multimedia/repu.jpg"
+        alt=""
+        width="80px"
+      />
+      <p style="margin-top: 3%; margin-left: 14%; color: gray">
+        Chris Fox. CEO at Mighty Schools.
+      </p>
+      <p style="margin-top: 0%; margin-left: 14%; color: gray">
+        John Doe saved us from a web disaster.
+      </p>
+    </div>
+    <div class="rebeca">
+      <img
+        style="border-radius: 50%; float: left"
+        width="80px"
+        src="../multimedia/repu1.jpg"
+        alt=""
+      />
+      <p style="margin-top: 2%; margin-left: 14%; color: gray">
+        Rebecca Flex. CEO at Company.
+      </p>
+      <p style="margin-top: 0%; margin-left: 14%; color: gray">
+        No one is better than John Doe.
+      </p>
+    </div>
+    <!-- </div> -->
+    <div class="photos" id="image">
+      <div
+        style="
+          font-size: 30px;
+          line-height: 45px;
+          margin-top: 12%;
+          color: white;
+        "
+      >
+        My Photos
+      </div>
+      <div class="pictures">
+        <div class="section1">
+          <img width="100%" src="../multimedia/fir1.jpg" alt="" />
+          <img width="100%" src="../multimedia/fir2.jpg" alt="" />
+          <img width="100%" src="../multimedia/fir3.jpg" alt="" />
+        </div>
+        <div class="section2">
+          <img width="100%" src="../multimedia/sec1.jpg" alt="" />
+          <img width="100%" src="../multimedia/sec2.jpg" alt="" />
+          <img width="100%" src="../multimedia/sec3.jpg" alt="" />
+          <img width="100%" src="../multimedia/sec4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="phone">
+      <div
+        style="font-size: 30px; line-height: 45px; margin-top: 5%; color: white"
+      >
+        Contact me
+      </div>
+      <div class="contsec1">
+        <div style="display: flex; gap: 25px">
+          <i
+            style="font-size: 36px; line: height 36px; color: white"
+            class="fa-solid fa-location-dot"
+          ></i>
+          <p style="color: gray">Chicago, US</p>
+        </div>
+        <div style="display: flex; gap: 25px">
+          <i
+            style="font-size: 36px; line: height 36px; color: white"
+            class="fa-solid fa-phone"
+          ></i>
+          <p style="color: gray">Phone: +00 151515</p>
+        </div>
+        <div style="display: flex; gap: 25px">
+          <i
+            style="font-size: 36px; line: height 36px; color: white"
+            class="fa-solid fa-envelope"
+          ></i>
+          <p style="color: gray">Email: mail@mail.com</p>
+        </div>
+      </div>
+      <p style="margin-top: 3%; color: gray">
+        Let's get in touch. Send me a message:
+      </p>
+      <form>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <input type="text" placeholder="Message" required />
+          <button class="button1">
+            <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div style="display: flex; font-size: 24px; gap: 3px">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-snapchat"></i>
+        <i class="fa-solid fa-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          style="color: gray; text-decoration: none"
+          href="https://www.w3schools.com/w3css/default.asp"
+          >w3.css</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
