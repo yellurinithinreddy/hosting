@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gd {
+        width: 60vw;
+        height: 50vh;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 20%);
+        grid-template-rows: repeat(2, 30%);
+        gap: 10px;
+        margin-left: 20%;
+        margin-top: 10%;
+      }
+      .child {
+        background-color: blue;
+        font-size: 20px;
+        text-align: center;
+      }
+      .c5 {
+        grid-area: 2/2/4/4;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c1 {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c2 {
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c3 {
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c4 {
+        background-color: palevioletred;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c6 {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gd">
+      <div class="child c1">A</div>
+      <div class="child c2">B</div>
+      <div class="child c3">C</div>
+      <div class="child c4">D</div>
+      <div class="child c5">E</div>
+      <div class="child c6">F</div>
+    </div>
+  </body>
+</html>

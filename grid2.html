@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gd {
+        width: 98vw;
+        height: 82vh;
+        display: grid;
+        grid-template-columns: repeat(4, 18%);
+        grid-template-rows: repeat(3, 30%);
+        gap: 10px;
+        justify-content: center;
+        margin-left: 0%;
+        margin-top: 5%;
+      }
+      .child {
+        background-color: blue;
+        font-size: 20px;
+      }
+      .c1 {
+        grid-area: 1/1/4/1;
+        background-color: chartreuse;
+      }
+      .c2 {
+        grid-area: 1/2/1/4;
+        background-color: chartreuse;
+      }
+      .c6 {
+        grid-area: 2/4/4/4;
+        background-color: chartreuse;
+      }
+      .c4,
+      .c8 {
+        background-color: orange;
+      }
+      .c5,
+      .c7,
+      .c3 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gd">
+      <div class="child c1">1</div>
+      <div class="child c2">2</div>
+      <div class="child c3">3</div>
+      <div class="child c4">4</div>
+      <div class="child c5">5</div>
+      <div class="child c6">6</div>
+      <div class="child c7">7</div>
+      <div class="child c8">8</div>
+    </div>
+  </body>
+</html>
