@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/7f1a9230de.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .footer {
+        width: 100%;
+        height: 15vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mobnav {
+        display: none;
+      }
+      .forms form button {
+        background-color: black;
+      }
+      .forms form label {
+        display: flex;
+        align-items: flex-start;
+      }
+      .forms form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .forms button {
+        color: white;
+        margin-top: 10%;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 16px;
+      }
+      .forms input {
+        width: 100%;
+        border-radius: 20px;
+        height: 40px;
+        background-color: #f6f6f6;
+        border: none;
+      }
+      .forms textarea {
+        background-color: #f6f6f6;
+      }
+      .forms {
+        width: 40%;
+        padding: 2% 1%;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 0 3px 0;
+      }
+      .division {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .map {
+        width: 82%;
+        height: 88%;
+      }
+      .contact {
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+        padding: 1% 8%;
+        position: relative;
+        bottom: 280px;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+      }
+      .cont {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 2%;
+        gap: 10px;
+        margin-top: 8%;
+      }
+      .num {
+        margin-top: 3%;
+      }
+      .phone {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0 0 4px 0;
+      }
+      .email {
+        width: 40%;
+        height: 120%;
+      }
+      .section3 {
+        width: 100%;
+        height: 79vh;
+        border: 1px solid black;
+        margin-top: 10%;
+        background-image: url(../multimedia/contact-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .section3 h6 {
+        margin-top: 5%;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ee626b;
+      }
+      .section3 iframe {
+        margin-left: -110%;
+      }
+      .section3 h2 {
+        margin-top: 0%;
+        font-size: 40px;
+        line-height: 56px;
+        color: white;
+      }
+      .sidenav {
+        margin-right: 5%;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .inf {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .cinf1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 8%;
+      }
+      .p1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+      }
+      .cinf2 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 8%;
+      }
+      .cinf2 i:hover {
+        color: orangered;
+      }
+      .navbar {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 42px;
+        left: 0px;
+        padding: 0 1%;
+        background-color: white;
+      }
+      .pnav {
+        width: 98vw;
+        height: 15vh;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 999;
+      }
+      .sidenav ul li {
+        display: inline;
+        padding: 20px;
+      }
+      .sidenav ul li:hover {
+        color: orangered;
+      }
+      h1 {
+        line-height: 24px;
+      }
+      * {
+        font-family: sans-serif;
+      }
+      .mainimg {
+        width: 100%;
+        height: 115.4vh;
+        background-image: url(../multimedia/banner-01.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .category {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        height: 40px;
+        padding: 0px 10px;
+        margin-left: -23%;
+      }
+      .mainimg h2 {
+        font-size: 64px;
+        line-height: 72px;
+        color: white;
+      }
+      .section1 {
+        width: 85vw;
+        height: 100%;
+        margin-left: 7%;
+        margin-top: 10%;
+        display: flex;
+        gap: 20px;
+      }
+      .mini1 {
+        width: 30%;
+        height: 100%;
+        padding: 20px;
+      }
+      .circ {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-color: rgb(255, 68, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        z-index: 1;
+      }
+      .mini2 {
+        width: 50%;
+        height: 100%;
+      }
+      .mini3 {
+        width: 20%;
+        height: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4%;
+        padding: 10px;
+        box-shadow: 1px 2px 5px 5px rgba(134, 131, 131, 0.26);
+      }
+      .mini3 ul h4 {
+        display: flex;
+        flex-direction: column;
+      }
+      .mini3 ul li {
+        display: flex;
+        gap: 30px;
+      }
+      .mini3 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .mini2 p {
+        font-size: 16px;
+      }
+      .videobg {
+        width: 100%;
+        height: 100vh;
+        margin-top: 2%;
+        background-image: url(../multimedia/video-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 76%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      .v1 {
+        margin-top: 1%;
+      }
+      .vframe {
+        margin-left: 14%;
+        margin-top: -29%;
+        height: 60vh;
+        width: 70vw;
+      }
+      .play {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 58%;
+        left: 47%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+      }
+      .achie {
+        width: 98vw;
+        height: 14vh;
+        margin-top: 7.5%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .sepa {
+        width: 18%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        margin-left: 6%;
+        background-color: #ffeee9;
+        border-radius: 10px;
+      }
+      .ctext {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      .decor {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        bottom: 30%;
+        left: -5%;
+        background-color: orangered;
+      }
+      .deal {
+        width: 85vw;
+        height: 100%;
+        margin-top: 10%;
+        margin-left: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .l1 {
+        border: 1px solid black;
+        width: 140px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+      }
+      .l1:active {
+        background-color: orangered;
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+      }
+      .section2 {
+        width: 85vw;
+        height: 100%;
+        margin-left: 7%;
+        margin-top: 3%;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+      }
+      .sect1 {
+        width: 23%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 0;
+      }
+      .sect2 {
+        width: 45%;
+        height: 100%;
+      }
+      .sect3 {
+        width: 25%;
+        height: 100%;
+      }
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      .items1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 79px;
+      }
+      .items2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 84px;
+      }
+      .items3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 59px;
+      }
+      .items4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .visit {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+      .prop {
+        width: 85vw;
+        height: 100%;
+        margin-left: 7%;
+        margin-top: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .properties {
+        width: 85vw;
+        height: 80vh;
+        margin-left: 7%;
+        margin-top: 5%;
+        display: flex;
+        gap: 10px;
+      }
+      .sites {
+        width: 33.33%;
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .siteinfo {
+        width: 100%;
+        height: 50%;
+        padding: 2% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .rate {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 20%;
+      }
+      .propertie {
+        display: none;
+      }
+      @media screen and (max-width: 426px) {
+        .vframe img {
+          width: 140%;
+          height: 60%;
+          margin-left: -20%;
+          margin-top: 14%;
+          border: none;
+        }
+        .vframe a .play {
+          margin-top: 13%;
+          margin-left: -7%;
+        }
+        .forms {
+          border: 1px solid black;
+          width: 110%;
+          padding: 2% 1%;
+          border-radius: 10px;
+          background-color: white;
+          box-shadow: 0 0 3px 0;
+          margin-left: 3%;
+        }
+        .division {
+          width: 110%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-left: 1%;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        .forms textarea {
+          width: 90%;
+        }
+        .forms {
+          width: 77%;
+          padding: 4% 1%;
+          border-radius: 10px;
+          background-color: white;
+          margin-top: 10%;
+          margin-left: 11%;
+        }
+        .phone {
+          width: 100%;
+          height: 120px;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          justify-content: flex-start;
+          padding-left: 5%;
+        }
+        .cont {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 1% 2%;
+          gap: 10px;
+          margin-top: 10%;
+          border-radius: 10px;
+        }
+        .division {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-left: 10%;
+        }
+        .contact {
+          width: 100%;
+          height: 100%;
+          margin-top: 3%;
+          padding: 1% 8%;
+          position: relative;
+          bottom: 280px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          gap: 30px;
+        }
+        .propertie {
+          width: 85vw;
+          height: 80vh;
+          margin-left: 7%;
+          margin-top: 5%;
+          display: flex;
+          gap: 10px;
+        }
+        .sites {
+          width: 50%;
+          height: 110%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .properties {
+          display: none;
+        }
+        .section2 {
+          width: 85vw;
+          height: 100%;
+          margin-left: 7%;
+          margin-top: 3%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+        .items,
+        .items1,
+        .items2,
+        .items3,
+        .items4 {
+          display: flex;
+          justify-content: space-between;
+        }
+        .sect1 {
+          width: 85%;
+          height: 100%;
+          border-radius: 10px;
+        }
+        .sect2 {
+          width: 100%;
+          height: 100%;
+        }
+        .sect3 {
+          width: 100%;
+          height: 100%;
+        }
+        .section1 {
+          width: 85vw;
+          height: 100%;
+          margin-left: 7%;
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .mini1 {
+          width: 80%;
+          height: 100%;
+          padding: 20px;
+        }
+        .mini2 {
+          width: 80%;
+          height: 100%;
+        }
+        .mini3 {
+          width: 80%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: 4%;
+          padding: 10px;
+          box-shadow: 1px 2px 5px 5px rgba(134, 131, 131, 0.26);
+        }
+        .achie {
+          width: 98vw;
+          height: 100%;
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          align-items: space-around;
+        }
+        .sepa {
+          width: 250px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          position: relative;
+          margin-left: 6%;
+          background-color: #ffeee9;
+          border-radius: 10px;
+        }
+        .decor {
+          display: none;
+        }
+        .deal {
+          width: 85vw;
+          height: 100%;
+          margin-top: 10%;
+          margin-left: 7%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .propertie {
+          width: 85vw;
+          height: 100%;
+          margin-left: 7%;
+          margin-top: 5%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .siteinfo {
+          width: 75%;
+          height: 50%;
+          padding: 2% 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .sites {
+          width: 100%;
+          height: 110%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .inf {
+          display: none;
+        }
+        .pnav {
+          display: none;
+        }
+        .mainimg {
+          width: 100%;
+          height: 115.4vh;
+          background-image: url(../multimedia/banner-01.jpg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .category {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          height: 40px;
+          padding: 0px 10px;
+          margin-left: -23%;
+        }
+        .htext {
+          text-align: center;
+        }
+        .section1 {
+          width: 85vw;
+          height: 100%;
+          margin-left: 7%;
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .mini1 {
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+        }
+        .mini2 {
+          width: 100%;
+          height: 100%;
+        }
+        .mini3 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: 4%;
+          padding: 10px;
+          box-shadow: 1px 2px 5px 5px rgba(134, 131, 131, 0.26);
+        }
+        .vframe {
+          margin-left: 17%;
+          margin-top: -300px;
+          border-radius: 100px;
+          height: 45vh;
+          width: 63vw;
+        }
+        .videobg {
+          width: 100%;
+          height: 100vh;
+          margin-top: 2%;
+          background-image: url(../multimedia/video-bg.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+        }
+        .mobnav {
+          width: 100%;
+          height: 10vh;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: sticky;
+          top: 0;
+          background-color: white;
+          z-index: 999;
+          padding: 5.3% 4%;
+          margin-top: -2%;
+        }
+        .mobnav button {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 439px) {
+        .mobnav {
+          width: 108%;
+          margin-left: -2.72%;
+          height: 10vh;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: sticky;
+          top: 0;
+          background-color: white;
+          z-index: 999;
+          padding: 5% 4%;
+          margin-top: -2%;
+        }
+        .mobnav button {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 426px) {
+        .siteinfo {
+          width: 120%;
+          height: 50%;
+          padding: 2% 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 553px) {
+        .links {
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+        }
+        .forms {
+          width: 95%;
+          padding: 2% 1%;
+          border-radius: 10px;
+          background-color: white;
+          box-shadow: 0 0 3px 0;
+          margin-left: 3%;
+        }
+        .division {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-left: 1%;
+        }
+      }
+      @media screen and (max-width: 321px) {
+        .contact {
+          width: 100%;
+          height: 100%;
+          margin-top: 3%;
+          padding: 1% 8%;
+          position: relative;
+          bottom: 280px;
+          display: flex;
+          justify-content: space-around;
+          gap: 30px;
+          margin-top: 18%;
+        }
+      }
+      @media screen and (max-width: 934px) {
+        #sched {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobnav">
+      <div><h1>VILLA</h1></div>
+      <button>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="inf">
+      <div class="cinf1">
+        <div class="p1">
+          <i
+            style="color: orangered; font-size: 20px"
+            class="fa-solid fa-envelope"
+          ></i>
+          <p>info@company.com</p>
+        </div>
+        <div class="p1">
+          <i
+            style="color: orangered; font-size: 20px"
+            class="fa-solid fa-map"
+          ></i>
+          <p>Sunny Isles Beach, FL 33160</p>
+        </div>
+      </div>
+      <div class="cinf2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+    <div class="pnav">
+      <div class="navbar">
+        <div style="margin-left: 7%"><h1>VILLA</h1></div>
+        <div class="sidenav">
+          <ul>
+            <li>Home</li>
+            <li>Properties</li>
+            <li>Property Details</li>
+            <li>Contact Us</li>
+            <li
+              id="sched"
+              style="background-color: black; color: white; border-radius: 5%"
+            >
+              <i class="fa-solid fa-calendar"></i>
+              Schedule a visit
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainimg">
+      <div class="category">
+        Toronto,
+        <p style="color: orangered">Canada</p>
+      </div>
+      <div class="htext">
+        <h2>
+          HURRY! <br />
+          GET THE BEST <br />
+          VILLA FOR YOU
+        </h2>
+      </div>
+    </div>
+
+    <div class="section1">
+      <div class="mini1">
+        <img
+          width="100%"
+          height="100%"
+          src="../multimedia/featured.jpg"
+          alt=""
+        />
+        <div class="circ">
+          <img src="../multimedia/featured-icon.png" alt="" />
+        </div>
+      </div>
+      <div class="mini2">
+        <h6 style="font-size: 15px; color: orangered">FEAUTURED</h6>
+        <h2 style="font-size: 40px">Best Appartment & Sea View</h2>
+        <div class="pg">
+          <p>Best useful links ?</p>
+          <p>
+            Get the best villa website template in HTML CSS and Bootstrap for
+            your business. TemplateMo provides you the best free CSS templates
+            in the world. Please tell your friends about it.
+          </p>
+          <p>How does this work ?</p>
+          <p>
+            Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod
+            tempor incididunt ut labore consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>Why is Villa Agency the best ?</p>
+          <p>
+            Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod
+            tempor incididunt ut labore consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="mini3">
+        <div style="display: flex; gap: 20px; align-items: center">
+          <div>
+            <img src="../multimedia/info-icon-01.png" alt="" />
+          </div>
+          <div>
+            <h4 style="font-size: 20px">
+              250 m2
+              <p style="font-size: 14px; color: gray">Total flat space</p>
+            </h4>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center">
+          <div>
+            <img src="../multimedia/info-icon-02.png" alt="" />
+          </div>
+          <div>
+            <h4 style="font-size: 20px">
+              Contract
+              <p style="font-size: 14px; color: gray">Contract Ready</p>
+            </h4>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center">
+          <div>
+            <img src="../multimedia/info-icon-03.png" alt="" />
+          </div>
+          <div>
+            <h4 style="font-size: 20px">
+              Payment
+              <p style="font-size: 14px; color: gray">Payment Process</p>
+            </h4>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center">
+          <div>
+            <img src="../multimedia/info-icon-04.png" alt="" />
+          </div>
+          <div>
+            <h4 style="font-size: 20px">
+              Safety
+              <p style="font-size: 14px; color: gray">24/7 Under Control</p>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 100%">
+      <div class="videobg">
+        <div class="v1">
+          <h6 style="font-size: 15px; line-height: 18px; color: #ee626b">
+            VIDEO VIEW
+          </h6>
+          <h2 style="font-size: 40px; line-height: 56px; color: #ffffff">
+            Get Closer View & <br />
+            Different Feeling
+          </h2>
+        </div>
+      </div>
+      <div class="vframe">
+        <img
+          width="100%"
+          height="100%"
+          style="border-radius: 10px"
+          src="../multimedia/video-frame.jpg"
+          alt=""
+        />
+        <a href="https://www.youtube.com/" target="_blank"
+          ><div class="play">
+            <i style="color: orangered" class="fa-solid fa-play"></i></div
+        ></a>
+      </div>
+    </div>
+
+    <div class="achie">
+      <div class="sepa">
+        <div class="num">
+          <h2 style="font-size: 40px; line-height: 48px; color: orangered">
+            34
+          </h2>
+        </div>
+        <div class="ctext">
+          Buildings <br />
+          finished Now
+        </div>
+      </div>
+      <div class="decor"></div>
+      <div class="sepa">
+        <div class="num">
+          <h2 style="font-size: 40px; line-height: 48px; color: orangered">
+            12
+          </h2>
+        </div>
+        <div class="ctext">
+          Years <br />
+          Experience
+        </div>
+      </div>
+      <div class="decor"></div>
+      <div class="sepa">
+        <div class="num">
+          <h2 style="font-size: 40px; line-height: 48px; color: orangered">
+            24
+          </h2>
+        </div>
+        <div class="ctext">
+          Awards <br />
+          Won 2023
+        </div>
+      </div>
+      <div class="decor"></div>
+    </div>
+
+    <div class="deal">
+      <div class="headings">
+        <h6 style="font-size: 16px; line-height: 18px; color: #ee626b">
+          BEST DEAL
+        </h6>
+        <h2 style="font-size: 40px; line-height: 56px">
+          Find Your Best Deal <br />
+          Right Now!
+        </h2>
+      </div>
+      <div class="links">
+        <div class="l1">Apartments</div>
+        <div class="l1">Villa House</div>
+        <div class="l1">Penthouse</div>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="sect1">
+        <div class="items">
+          <p>Total Flat Space</p>
+          <h2>185 m2</h2>
+        </div>
+        <div class="items1">
+          <p>Floor number</p>
+          <h2>26th</h2>
+        </div>
+        <div class="items2">
+          <p>Number of rooms</p>
+          <h2>4</h2>
+        </div>
+        <div class="items3">
+          <p>Parking Available</p>
+          <h2>Yes</h2>
+        </div>
+        <div class="items4">
+          <p>Payment Process</p>
+          <h2>Bank</h2>
+        </div>
+      </div>
+      <div class="sect2">
+        <img
+          width="100%"
+          height="100%"
+          src="../multimedia/deal-01.jpg"
+          alt=""
+        />
+      </div>
+      <div class="sect3">
+        <h4 style="font-size: 17px; line-height: 20.4px">
+          Extra Info About Property
+        </h4>
+        <p style="font-size: 16px; line-height: 24px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+          tempor pack incididunt ut labore et dolore magna aliqua quised ipsum
+          suspendisse. <br /><br /><br />
+          When you need free CSS templates, you can simply type TemplateMo in
+          any search engine website. In addition, you can type TemplateMo
+          Portfolio, TemplateMo One Page Layouts, etc.
+        </p>
+
+        <div class="visit">
+          <i class="fa-solid fa-calendar"></i> Schedule a Visit
+        </div>
+      </div>
+    </div>
+
+    <div class="prop">
+      <h6 style="color: #ee626b; font-size: 15px; line-height: 18px">
+        PROPERTIES
+      </h6>
+      <h2 style="font-size: 40px; line-height: 56px; margin-top: -2%">
+        We Provide The Best <br />Property You Like
+      </h2>
+    </div>
+
+    <div class="grid">
+      <div class="properties">
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-01.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Luxury Villa
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$2.264.000</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              18 New Street Miami, OR 97219
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>8</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>8</b></span>
+              </li>
+              <li>
+                Area: <span><b>545m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>3</b></span>
+              </li>
+              <li>
+                Parking: <span><b>2 cars</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-02.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Luxury Villa
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$1.180.000</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              54 Mid Street Florida, OR 27001
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>6</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>5</b></span>
+              </li>
+              <li>
+                Area: <span><b>450m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>3</b></span>
+              </li>
+              <li>
+                Parking: <span><b>8 spots</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-03.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Luxury Villa
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$1.460.000</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              26 Old Street Miami, OR 38540
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>5</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>4</b></span>
+              </li>
+              <li>
+                Area: <span><b>225m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>3</b></span>
+              </li>
+              <li>
+                Parking: <span><b>10 spots</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="properties">
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-04.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Apartment
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$584.500</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              12 New Street Miami, OR 12650
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>4</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>3</b></span>
+              </li>
+              <li>
+                Area: <span><b>125m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>25th</b></span>
+              </li>
+              <li>
+                Parking: <span><b>2 cars</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-05.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Pent House
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$925.600</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              34 Beach Street Miami, OR 42680
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>4</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>4</b></span>
+              </li>
+              <li>
+                Area: <span><b>180m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>38th</b></span>
+              </li>
+              <li>
+                Parking: <span><b>2 cars</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+        <div class="sites">
+          <div class="site1">
+            <img
+              style="border-radius: 10px"
+              src="../multimedia/property-06.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="siteinfo">
+            <div class="rate">
+              <div
+                style="
+                  border: 1px solid black;
+                  height: 30px;
+                  width: 120px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 10px;
+                  background-color: #fbd9cf;
+                "
+              >
+                Modern Condo
+              </div>
+              <h6 style="font-size: 20px; color: orangered">$450.000</h6>
+            </div>
+            <h4 style="font-size: 19px; line-height: 22.8px">
+              22 New Street Portland, OR 16540
+            </h4>
+            <ul
+              type="none"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-left: -10%;
+              "
+            >
+              <li>
+                Bedrooms: <span><b>3</b></span>
+              </li>
+              <li>
+                Bathrooms: <span><b>2</b></span>
+              </li>
+              <li>
+                Area: <span><b>165m2</b></span>
+              </li>
+              <li>
+                Floor: <span><b>26th</b></span>
+              </li>
+              <li>
+                Parking: <span><b>3 cars</b></span>
+              </li>
+            </ul>
+            <div class="visit">Schedule a Visit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="propertie">
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-01.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Luxury Villa
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$2.264.000</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            18 New Street Miami, OR 97219
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>8</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>8</b></span>
+            </li>
+            <li>
+              Area: <span><b>545m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>3</b></span>
+            </li>
+            <li>
+              Parking: <span><b>2 cars</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-02.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Luxury Villa
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$1.180.000</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            54 Mid Street Florida, OR 27001
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>6</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>5</b></span>
+            </li>
+            <li>
+              Area: <span><b>450m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>3</b></span>
+            </li>
+            <li>
+              Parking: <span><b>8 spots</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="propertie">
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-03.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Luxury Villa
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$1.460.000</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            26 Old Street Miami, OR 38540
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>5</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>4</b></span>
+            </li>
+            <li>
+              Area: <span><b>225m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>3</b></span>
+            </li>
+            <li>
+              Parking: <span><b>10 spots</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-04.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Apartment
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$584.500</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            12 New Street Miami, OR 12650
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>4</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>3</b></span>
+            </li>
+            <li>
+              Area: <span><b>125m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>25th</b></span>
+            </li>
+            <li>
+              Parking: <span><b>2 cars</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="propertie">
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-05.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Pent House
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$925.600</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            34 Beach Street Miami, OR 42680
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>4</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>4</b></span>
+            </li>
+            <li>
+              Area: <span><b>180m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>38th</b></span>
+            </li>
+            <li>
+              Parking: <span><b>2 cars</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+      <div class="sites">
+        <div class="site1">
+          <img
+            style="border-radius: 10px"
+            src="../multimedia/property-06.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="siteinfo">
+          <div class="rate">
+            <div
+              style="
+                border: 1px solid black;
+                height: 30px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: #fbd9cf;
+              "
+            >
+              Modern Condo
+            </div>
+            <h6 style="font-size: 20px; color: orangered">$450.000</h6>
+          </div>
+          <h4 style="font-size: 19px; line-height: 22.8px">
+            22 New Street Portland, OR 16540
+          </h4>
+          <ul
+            type="none"
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: -10%"
+          >
+            <li>
+              Bedrooms: <span><b>3</b></span>
+            </li>
+            <li>
+              Bathrooms: <span><b>2</b></span>
+            </li>
+            <li>
+              Area: <span><b>165m2</b></span>
+            </li>
+            <li>
+              Floor: <span><b>26th</b></span>
+            </li>
+            <li>
+              Parking: <span><b>3 cars</b></span>
+            </li>
+          </ul>
+          <div class="visit">Schedule a Visit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3">
+      <h6>CONTACT US</h6>
+      <h2>
+        Get In Touch With <br />
+        Our Agents
+      </h2>
+    </div>
+    <!-- <div class="parentcont"></div> -->
+    <div class="contact">
+      <div class="division">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51943.63951246112!2d-80.118781!3d25.952478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1717158984751!5m2!1sen!2sth"
+            width="120%"
+            height="500px"
+            style="border: 0; border-radius: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="cont">
+          <div class="phone">
+            <img src="../multimedia/phone-icon.png" alt="" />
+            <div class="num">
+              <b>010-020-0340</b>
+              <p style="color: #aaaaaa">Phone Number</p>
+            </div>
+          </div>
+          <div class="phone">
+            <img src="../multimedia/email-icon.png" alt="" />
+            <div class="num">
+              <b>info@villa.co</b>
+              <p style="color: #aaaaaa">Business Email</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forms">
+        <form>
+          <label class="nam" for="fullname">Full Name</label>
+          <br />
+          <input
+            type="text"
+            id="fullname"
+            name="Name"
+            required
+            placeholder="Your Name..."
+          />
+          <br />
+          <label class="ema" for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            required
+            placeholder="Your Email..."
+          />
+          <br />
+          <label class="sub" for="subject">Subject</label>
+          <br />
+          <input
+            type="text"
+            id="subject"
+            name="Subject"
+            required
+            placeholder="Subject..."
+          />
+          <br />
+          <label class="mes" for="msg">Message</label>
+          <br />
+          <textarea
+            name="message"
+            id="msg"
+            cols="45"
+            rows="10"
+            placeholder="Your Message..."
+            style="border-radius: 10px"
+          ></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:
+        Designed by Yelluri Nithin Reddy
+      </p>
+    </div>
+  </body>
+</html>
