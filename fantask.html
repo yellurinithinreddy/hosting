@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .circle {
+        width: 120px;
+        height: 120px;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: relative;
+        left: 20%;
+        top: 50px;
+        background-color: brown;
+      }
+      .blade {
+        height: 90%;
+        width: 20%;
+        border: 1px solid black;
+        position: relative;
+        bottom: 40px;
+        left: 48px;
+        border-radius: 20%;
+        background-color: aqua;
+      }
+      .blade1 {
+        height: 90%;
+        width: 20%;
+        border: 1px solid black;
+        position: relative;
+        bottom: 50px;
+        left: 0px;
+        transform: rotate(35deg);
+        border-radius: 20%;
+        background-color: aqua;
+      }
+      .blade2 {
+        height: 90%;
+        width: 20%;
+        border: 1px solid black;
+        position: relative;
+        bottom: 160px;
+        left: 100px;
+        transform: rotate(-35deg);
+        border-radius: 20%;
+        background-color: aqua;
+      }
+      #on:checked ~ .circle {
+        transform: rotate(7200deg);
+        transition-property: var(transform);
+        transition-duration: 20s;
+      }
+      #s1:checked ~ .circle {
+        transform: rotate(7200deg);
+        transition-property: var(transform);
+        transition-duration: 10s;
+      }
+      #s2:checked ~ .circle {
+        transform: rotate(7200deg);
+        transition-property: var(transform);
+        transition-duration: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" id="on" name="fan" />on
+    <input type="radio" id="off" name="fan" />off
+    <input type="radio" id="s1" name="fan" />2
+    <input type="radio" id="s2" name="fan" />3
+    <div class="circle">
+      <div class="blade"></div>
+      <div class="blade1"></div>
+      <div class="blade2"></div>
+    </div>
+  </body>
+</html>
