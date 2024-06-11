@@ -1,0 +1,19 @@
+Differences between var,let,const variables.
+
+1.Var
+It can be updated and re-declared in the same scope.
+It can be declared without initialization.
+It can be accessed without initialization as its default value is “undefined”.
+It can be redeclare and reassigned and reinitialization
+
+2.let
+It can be updated but cannot be re-declared in the same scope.
+It can be declared without initialization.
+It cannot be accessed without initialization otherwise it will give ‘reference Error’.
+It can be done only reassignment 
+
+3.const
+It can neither be updated or re-declared in any scope.
+It cannot be declared without initialization.
+It cannot be accessed without initialization, as it cannot be declared without initialization.
+It cannot be redeclare and reassigned and reinitialization

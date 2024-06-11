@@ -1,0 +1,35 @@
+1. What is the value of typeof typeof  true?
+Ans:String(true is a type of Boolean and it is type of string)
+
+2. What is the result of null == undefined?
+Ans:True(null is a empty value and undefined has no value)
+
+3. What is the value of +''?
+Ans:0 (an operator converts an empty string to a number)
+ 
+4. What is the result of [] == false?
+Ans:True  /*(an empty array is zero and false is zero)*/
+
+5. What is the value of {} + {}?
+Ans:[object object][object object]  (because  it is the object)
+
+6. What is the value of typeof 42n?
+Ans:Big int(42n is the bigint)
+
+7. What is the result of "" == false?
+Ans:True(empty string changes to false )
+
+8. What is the value of Boolean("0")?
+Ans:True(non-empty string is always true)
+
+9. What is the result of [] === []
+Ans:False(both are arrays but they are different memory allocation)
+
+10. What is the value of typeof Infinity?
+Ans:Number( infinity is a number)
+
+11 What is the result of {} === {}?
+Ans:False(both are objects with different memory allocation)
+
+12. What is the value of typeof NaN?
+Ans:Number(NaN  is  also a special number)
