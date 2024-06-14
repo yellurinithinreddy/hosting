@@ -1,0 +1,51 @@
+1. Write a JavaScript function that takes two numbers and an operator ('+', '-', '*', '/') as arguments and returns the result of the arithmetic operation?
+
+function arithmetic(x,y,op){
+    let ans;
+    if(op=="+"){
+        ans=x+y;
+    }
+    else if(op=="-"){
+        ans=x-y;
+    }
+    else if(op=="*"){
+        ans=x*y;
+    }
+    else{
+        ans=x/y;
+    }
+    return ans;
+}
+console.log(arithmetic(2,3,"*"));
+
+Ans:6
+
+2. Write a JavaScript function that takes a number as a argument and returns it's square value?
+
+function square(n){
+    return n**2;
+}
+console.log(square(5));
+
+Ans:25
+
+3.Write a JavaScript function that takes two numbers as a arguments and returns the highest(max ) of the number using terinary operator inside a function?
+
+function maxi(a,b){
+    let ans;
+    a>b?ans=a:ans=b;
+    return ans;
+}
+console.log(maxi(23,5));
+
+Ans:25
+
+4. Write a javascript function which takes three arguments  (amount , rate of interest, no of years ) returns the total value of interest?
+
+function intrest(amount,rate,years){
+    let ans=amount*years*rate/100;
+    return ans;
+}
+console.log(intrest(201,10,5));
+
+Ans:100.5
