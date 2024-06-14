@@ -1,0 +1,186 @@
+1
+let a=5;
+let b=5;
+if(a>b){
+    console.log(a);
+}
+else if(b>a){
+    console.log(b);
+}
+else{
+    console.log("Equal")
+}
+
+2
+let a=3;
+let b=-7;
+let c=2;
+ans=a*b*c;
+if(ans<0){
+    console.log("the sign is -")
+}
+else{
+    console.log("the sign is +")
+}
+
+3
+let a=10;
+let b=10;
+let c=10;
+if(a<b){
+    if(a<c){
+        if(b<c){
+            console.log(a+","+b+","+c);
+        }
+        else{
+            console.log(a+","+c+","+b);
+        }
+    }
+    else if(c<b){
+        if(a<c){
+            console.log(b+","+a+","+c);
+        }
+        else{
+            console.log(b+","+c+","+a);
+        }
+
+    }
+}
+else if(b<c){
+    if(a<c){
+        console.log(b+","+a+","+c);
+    }
+    else{
+        console.log(b+","+c+","+a);
+    }
+}
+else if(c<a){
+    if(b<a){
+        console.log(c+","+b+","+a);
+    }
+    else{
+        console.log(c+","+a+","+b);
+    }
+}
+else{
+    console.log(a+","+b+","+c);
+}
+
+4
+let a=-5;
+let b=-2;
+let c=-6;
+let d=0;
+let e=-1;
+if(a>b && a>c && a>d && a>e){
+    console.log(a);
+}
+else if(b>a && b>c && b>d && b>e){
+    console.log(b);
+}
+else if(c>a && c>b && c>d && c>e){
+    console.log(c);
+}
+else if(d>a && d>c && d>e && d>b){
+    console.log(d);
+}
+else{
+    console.log(e);
+}
+
+5
+let a=" is even";
+let b=" is odd";
+for(i=0;i<=15;i++){
+    if(i%2==0){
+        console.log(i+a);
+    }
+    else{
+        console.log(i+b);
+    }
+}
+
+7
+for(i=1;i<=100;i++){
+    if(i%3==0 && i%5==0){
+        console.log(i+" FizzBuzz");
+    }
+    else if(i%3==0){
+        console.log(i+" Fizz");
+    }
+    else if(i%5==0){
+        console.log(i+" Buzz");
+    }
+    else{
+        console.log(i);
+    }
+}
+
+9
+let a=371;
+let num=a;
+let sum=0;
+while(a>0){
+    r=a%10;
+    sum+=r**3;
+    a=Math.trunc(a/10);
+}
+if(sum==num){
+    console.log("True");
+}
+else{
+    console.log("False");
+}
+
+10
+let str="";
+for(i=0;i<5;i++){
+    for(j=0;j<i+1;j++){
+        str+="*"
+    }
+    console.log(str);
+    str="";
+}
+
+11
+let n1=2154;
+let n2=458;
+for(i=Math.min(n1,n2);i>0;i--){
+    if(n1%i==0 && n2%i==0){
+        console.log(i);
+        break;
+    }
+}
+
+12
+let sum=0;
+for(i=1;i<=1000;i++){
+    if(i%3==0 || i%5==0){
+        sum+=i;
+    }
+}
+console.log(sum);
+
+6
+let marks = { David: 80, Vinoth: 77, Divya: 88, Ishitha: 95, Thomas: 68 };
+let val=Object.values(marks);
+let s=0;
+for(i=0;i<val.length;i++){
+    s+=val[i];
+}
+const avg=s/val.length;
+if(avg<60){
+    console.log("F");
+}
+else if(avg<70){
+    console.log("D");
+}
+else if(avg<80){
+    console.log("C");
+}
+else if(avg<90){
+    console.log("B");
+}
+else{
+    console.log("A");
+}
