@@ -1,0 +1,24 @@
+1)iterabe object values through for in loop
+
+let obj={"name":"Nithin","city":"Hyd","skills":"html","area":"kphb"};
+for(i in obj){
+    console.log(obj[i]);
+}
+
+2) iterabe object keys  through for in loop
+
+let obj={"name":"Nithin","city":"Hyd","skills":"html","area":"kphb"};
+let arr=Object.keys(obj);
+for(i in arr){
+    console.log(arr[i]);
+}
+
+3)iterate object values and keys using entries , keys and values methods
+    object entrries - keys and values
+    object keys - keys and values
+    object values - we can get only values
+
+let obj={"name":"Nithin","city":"Hyd","skills":"html","area":"kphb"};
+for(let [i,j] of Object.entries(obj)){
+    console.log(i);
+}
