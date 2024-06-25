@@ -5,21 +5,29 @@ console.log(arr3);
 
 ans:[1,2,3,4,5,6]
 
-let arr=[1,2,[1,2,3],[1,[2,3]]];
+let arr= [1, [2, [3, [4]]]];
 console.log(arr.flat(2));
-ans:[1,2,1,2,3,1,2,3]
+ans:[1,2,3,[4]]
 
-let arr=[1,2,3,4,6,7];
-arr.splice(2,2,9,10);
+let arr=[1,2,3,4,5];
+let rem=arr.splice(2,2,'a','b');
 console.log(arr);
+console.log(rem);
 
-ans:[1,2,9,10,6,7]
+ans:[ 1, 2, 'a', 'b', 5 ]
+rem=[3,4]
 
-let arr=[1,2,3,4,6,7];
-let s=arr.slice(3);
+const array = [1, 2, 3, 4, 5];
+let ans=array.toSpliced(1,2,'a','b');
+console.log(ans);
+
+ans:[1,'a','b',4,5]
+
+let arr=[1,2,3,4,5];
+let s=arr.slice(1,4);
 console.log(s);
 
-ans:[4,6,7]
+ans:[2,3,4]
 
 let arr=[1,2,3,4,6,7,3];
 let s=arr.indexOf(3);
