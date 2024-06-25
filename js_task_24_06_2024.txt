@@ -1,0 +1,48 @@
+let arr1=[1,2,3];
+let arr2=[4,5,6];
+let arr3=arr1.concat(arr2);
+console.log(arr3);
+
+ans:[1,2,3,4,5,6]
+
+let arr=[1,2,[1,2,3],[1,[2,3]]];
+console.log(arr.flat(2));
+ans:[1,2,1,2,3,1,2,3]
+
+let arr=[1,2,3,4,6,7];
+arr.splice(2,2,9,10);
+console.log(arr);
+
+ans:[1,2,9,10,6,7]
+
+let arr=[1,2,3,4,6,7];
+let s=arr.slice(3);
+console.log(s);
+
+ans:[4,6,7]
+
+let arr=[1,2,3,4,6,7,3];
+let s=arr.indexOf(3);
+console.log(s);
+
+ans:2
+
+let arr=[1,2,3,4,6,7,3];
+let s=arr.lastIndexOf(3);
+console.log(s);
+
+ans:7
+
+let arr=[1,2,3,4,6,7,3];
+let s=arr.includes(10);
+console.log(s);
+
+ans:false
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = array1.concat(array2).flat();
+const splicedArray = mergedArray.toSpliced(2, 1, 'a');
+const finalArray = splicedArray.slice(1, 5);
+console.log(finalArray.includes('a'));//true
+console.log(finalArray.indexOf(5)); //3
