@@ -1,0 +1,24 @@
+1.reverse of a number(positive and negative)
+
+let n=879;
+let rev=0;
+if(n<0){
+    let num=Math.abs(n);
+    while(num>0){
+        r=num%10;
+        rev=rev*10+r;
+        num=Math.trunc(num/10);
+    }
+    rev*=-1;
+    console.log(rev);
+
+}
+else{
+    while(n>0){
+        r=n%10;
+        rev=rev*10+r;
+        n=Math.trunc(n/10);
+    
+    }
+    console.log(rev);
+}

@@ -1,0 +1,85 @@
+1.Write a function that takes an array of objects as an 
+argument and returns an array of the keys of each object using 
+for...in iteration.
+
+let arr=[{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }];
+function obj1(arr){
+    let ans=[];
+    for(i in arr){
+        ans.push(Object.keys(arr[i]));
+    }
+    console.log(ans);
+}
+obj1(arr);
+
+Output: [["a", "b"], ["c", "d"], ["e", "f"]]
+
+2.Write a function that takes an array of objects as an argument and returns an array of the values of each object using for...in iteration.
+
+let arr=[{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }];
+function obj2(arr){
+    let ans=[];
+    for(i in arr){
+        ans.push(Object.values(arr[i]));
+    }
+    console.log(ans);
+}
+obj2(arr);
+
+Output: [[1, 2], [3, 4], [5, 6]]
+
+3.Write a function that takes an array of objects as an argument and returns a new array with 
+only the objects that have a specific property using for...in iteration.
+
+let arr=[{ a: 1 }, { b: 2 }, { a: 3, b: 4}];
+let ans=[];
+function obj3(arr,prop){
+    for(i in arr){
+        if(arr[i].hasOwnProperty(prop)){
+            ans.push(arr[i]);
+        }
+    }
+    console.log(ans);
+}
+obj3(arr,"a");
+
+Output: [{ a: 1 }, { a: 3, b: 4 }]
+
+4.Write a function that takes an array of objects as an argument and returns a new array with the objects 
+sorted by a specific property using for...in iteration.
+
+let arr=[{ a: 2 }, { a: 1 }, { a: 3 }];
+function obj4(arr,prop){
+    for(i=0;i<arr.length;i++){
+        for(j=i;j<arr.length;j++){
+            if(arr[j][prop]<arr[i][prop]){
+                let temp=arr[i][prop];
+                arr[i][prop]=arr[j][prop];
+                arr[j][prop]=temp;
+            }
+        }
+    }
+    console.log(arr);
+}
+obj4(arr,"a");
+
+Output: [{ a: 1 }, { a: 2 }, { a: 3 }]
+
+5.Write a function that takes an array of objects as an argument and returns a new object with the properties 
+from all the objects in the array using for...in iteration.
+
+let arr=[{ a: 1 }, { b: 2 }, { c: 3 }];
+let ans={};
+function obj5(arr){
+    for(i in arr){
+        for(j in arr[i]){
+            ans[j]=arr[i][j];
+        }
+    }
+    console.log(ans);
+}
+obj5(arr);
+
+Output: { a: 1, b: 2, c: 3 }
+
+
