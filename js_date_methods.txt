@@ -1,0 +1,74 @@
+1) Write a function that displays the current date and time in the format YYYY-MM-DD HH:MM:SS.
+
+let d=new Date();
+function date(d){
+    let year=d.getFullYear();
+    let month=d.getMonth();
+    if(String(month).length==1){
+        month="0"+month;
+    }
+    let date=d.getDate();
+    if(String(date).length==1){
+        date="0"+date;
+    }
+    let hour=d.getHours();
+    if(String(hour).length==1){
+        hour="0"+hour;
+    }
+    let min=d.getMinutes();
+    if(String(min).length==1){
+        min="0"+min;
+    }
+    let sec=d.getSeconds();
+    if(String(sec).length==1){
+        sec="0"+sec;
+    }
+    let ans=year+"-"+month+"-"+date+" "+hour+":"+min+":"+sec
+    return ans;    
+}
+console.log(date(d));
+
+2) Write a function that calculates the number of days between two dates.
+
+let d1=new Date("july 24,2024,15:06:02");
+let d2=new Date("july 30,2024,16:07:01");
+function days(d1,d2){
+    let c1=d1.getDate();
+    let c2=d2.getDate();
+    return c2-c1;
+}
+console.log(days(d1,d2));
+
+3) Write a function that returns the day of the week for a given date.
+
+let d=new Date("july 12,2024,15:06:02");
+function week(d){
+    let day=d.getDay();
+    if(day==0){
+        return "Sunday";
+    }
+    else if(day==1){
+        return "Monday";
+    }
+    else if(day==2){
+        return "Tuesday";
+    }
+    else if(day==3){
+        return "Wednesday";
+    }
+    else if(day==4){
+        return "Thursday";
+    }
+    else if(day==5){
+        return "Friday";
+    }
+    else{
+        return "Saturday";
+    }
+}
+console.log(week(d));
+
+
+
+
+

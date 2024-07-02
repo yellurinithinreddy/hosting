@@ -1,0 +1,31 @@
+1)  check how isNaN works in different scenario
+
+let num="5"*10*"20i";
+console.log(Number.isNaN(num));
+
+output:true
+
+2) study types of coercion
+
+Types of Type Coercion
+Implicit Coercion: This occurs automatically when JavaScript encounters an operation involving different data types.
+Explicit Coercion: This is when you manually convert a value from one type to another using functions or methods.
+
+Explicit Type Conversion
+JavaScript type conversion, allowing you to convert values from one data type to another.
+String(): Converts a value to a string.
+let num = 123; let str = String(num); console.log(str); // Output: "123" 
+Number(): Converts a value to a number.
+let str = "123"; let num = Number(str); console.log(num); // Output: 123  
+3. Boolean(): Converts a value to a boolean.
+let num = 0; let bool = Boolean(num); console.log(bool); // Output: false
+
+3) write a program to print a random otp
+
+let otp=Math.floor(Math.random()*1000000)
+if(String(otp).length == 6){
+    console.log(otp);
+}
+else{
+    console.log(otp*10);
+}
