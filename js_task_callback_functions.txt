@@ -1,0 +1,51 @@
+1. Create a function greet that takes a name and a callback function. The greet function should call the callback function, passing the name to it. Define a callback function that simply logs "Hello, [name]" to the console.
+
+function greet(x){
+    x("Nithin");
+}
+function fun(name){
+    console.log("Hello, "+name);
+}
+greet(fun);
+
+output:Hello, Nithin
+
+2.  Write a function that takes an array of numbers and uses the map function to create a new array where each number is doubled.
+
+let arr=[1,2,3,4,5];
+let ans=arr.map(a=>a*2);
+console.log(ans);
+
+output:[2,4,6,8,10]
+
+3. Create a function applyToEach that takes an array and a callback function. The applyToEach function should use the map function to apply the callback to each element of the array and return the new array.
+
+let arr=[2,4,7,9,1,6];
+function applyToEach(arr,x){
+    let ans=arr.map(x);
+    return ans;
+}
+function fun(a){
+    if(a%2==0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+console.log(applyToEach(arr,fun));
+
+output:[1,1,0,0,0,1]
+
+4. Write a function that takes an array of strings and uses the map function to create a new array where each string is converted to uppercase.
+
+
+let arr=["art","with","feel"];
+function upper(str){
+    return str.toUpperCase();
+}
+let ans=arr.map(upper)
+console.log(ans);
+
+output:["ART","WITH","FEEL"]
