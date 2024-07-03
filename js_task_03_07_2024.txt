@@ -1,0 +1,116 @@
+1. Given an array of numbers, use the map function to create a new array where each number is doubled.
+const numbers = [1, 2, 3, 4, 5];
+Example Output:   
+[2, 4, 6, 8, 10]
+
+Code:
+
+let arr=[1,2,3,4,5];
+let ans=arr.map(a=>a*2);
+console.log(ans);
+
+2. Given an array of names, use the forEach function to print each name in the console.
+const names = ['Alice', 'Bob', 'Charlie', 'David'];
+Example Output:   
+Alice
+Bob
+Charlie
+David
+
+Code:
+
+let arr=['Alice', 'Bob', 'Charlie', 'David'];
+arr.forEach(a=>console.log(a));
+
+3. Given an array of numbers, use the filter function to create a new array that contains only the even numbers.
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+Example Output:   
+[2, 4, 6, 8, 10]
+
+Code:
+
+let arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let ans=arr.filter(a=>(a%2==0));
+console.log(ans);
+
+4. Given an array of objects representing students with their names and scores, use the map function to create a new array of strings that says "Name has scored Score".  
+const students = [
+  { name: 'Alice', score: 85 },
+  { name: 'Bob', score: 92 },
+  { name: 'Charlie', score: 88 }
+];
+
+Example Output:  
+['Alice has scored 85', 'Bob has scored 92', 'Charlie has scored 88']
+
+Code:
+
+let arr = [
+    { name: 'Alice', score: 85 },
+    { name: 'Bob', score: 92 },
+    { name: 'Charlie', score: 88 }
+  ];
+function fun(obj){
+    return obj.name+" "+"has scored"+" "+obj.score;
+}
+let ans=arr.map(fun);
+console.log(ans);
+
+
+5. Given an array of objects representing people with their names and ages, use the filter function to create a new array that contains only the people who are 18 or older. 
+const people = [
+  { name: 'Alice', age: 17 },
+  { name: 'Bob', age: 20 },
+  { name: 'Charlie', age: 15 },
+  { name: 'David', age: 22 }
+];
+Example Output:    
+[
+  { name: 'Bob', age: 20 },
+  { name: 'David', age: 22 }
+]  
+
+Code:
+
+let arr = [
+    { name: 'Alice', age: 17 },
+    { name: 'Bob', age: 20 },
+    { name: 'Charlie', age: 15 },
+    { name: 'David', age: 22 }
+  ];
+let ans=arr.filter(a=>a.age>=18);
+console.log(ans);
+
+6. Given an array of strings, use the map function to create a new array where each string is converted to uppercase.
+const words = ['hello', 'world', 'javascript', 'map'];
+Example Output:
+['HELLO', 'WORLD', 'JAVASCRIPT', 'MAP']
+
+Code:
+
+let arr = ['hello', 'world', 'javascript', 'map'];
+let ans=arr.map(a=>a.toUpperCase());
+console.log(ans);
+
+7. Given an array of numbers, use the forEach function to add 1 to each number in the array.
+let numbers = [10, 20, 30, 40, 50];
+Output : 
+numbers = [11, 21, 31, 41, 51];
+
+Code:
+
+let arr=[10, 20, 30, 40, 50];
+let ans=[];
+arr.forEach(a=>ans.push(a+1));
+console.log(ans);
+
+8. Given an array of strings, use the filter function to create a new array that contains only the strings that have more than 3 characters.
+const words = ['hi', 'hello', 'hey', 'world', 'js'];
+Output : 
+['hello', 'world']
+
+Code:
+
+let arr = ['hi', 'hello', 'hey', 'world', 'js'];
+let ans=arr.filter(a=>a.length>3);
+console.log(ans);
