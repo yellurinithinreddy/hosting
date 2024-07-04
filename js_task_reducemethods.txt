@@ -1,0 +1,31 @@
+1. Given an array of strings, use the map function to create a new array where each string is converted to uppercase and sort the data
+
+
+let arr=["nithin","rahul","kalyan"];
+let ans=arr.map(a=>a.toUpperCase());
+ans.sort();
+console.log(ans);
+
+output:["NITHIN","RAHUL","KALYAN"]
+
+2. Given an array of numbers, use the forEach function to add 1 to each number in the array and sort the data in descending
+
+let arr=[10,20,30,40,50];
+let ans=[];
+arr.forEach(a=>ans.push(a+1));
+ans.sort((a,b)=>(b-a));
+console.log(ans);
+
+output:[51,41,31,21,11]
+
+3. Given an array of strings, use the filter function to create a new array that contains only the strings that have more than 3 characters and join the data separated by space using reduce and reduceRight
+
+let arr= ['hi', 'hello', 'hey', 'world', 'js'];
+let ans=arr.filter(a=>a.length>3);
+let res1=ans.reduce((a,b)=>a+b);
+let res2=ans.reduceRight((a,b)=>a+b);
+console.log(res1);
+console.log(res2);
+
+output:helloworld
+       worldhello
