@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div1 = document.createElement("div");
+      div1.style.border = "1px solid";
+      div1.style.width = "30vw";
+      document.body.style.display = "flex";
+      document.body.style.justifyContent = "center";
+      div1.style.display = "flex";
+      div1.style.flexDirection = "column";
+      div1.style.height = "100%";
+      let div2 = document.createElement("div");
+      div1.appendChild(div2);
+      let clg = document.createElement("h1");
+      clg.textContent = "Sree vidyanikethan Engineering college";
+      div2.appendChild(clg);
+      clg.style.fontSize = "20px";
+      clg.style.textAlign = "center";
+      let div5 = document.createElement("div");
+      let div3 = document.createElement("div");
+      div5.appendChild(div3);
+      div1.appendChild(div5);
+      let name = document.createElement("p");
+      name.textContent = "NAME: YELLURI NITHIN REDDY";
+      let roll = document.createElement("p");
+      roll.textContent = "20121A12C9";
+      let branch = document.createElement("p");
+      branch.textContent = "BTECH-IT";
+      let dur = document.createElement("p");
+      dur.textContent = "2020-2024";
+      div3.appendChild(name);
+      div3.appendChild(roll);
+      div3.appendChild(branch);
+      div3.appendChild(dur);
+      div1.appendChild(div3);
+      let div4 = document.createElement("div");
+      let image = document.createElement("img");
+      image.setAttribute("src", "../multimedia/photo.jpg");
+      image.setAttribute("width", "100%");
+      image.setAttribute("height", "450px");
+      div4.appendChild(image);
+      div5.appendChild(div4);
+      document.body.appendChild(div1);
+    </script>
+  </body>
+</html>
