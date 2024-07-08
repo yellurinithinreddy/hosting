@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <form>
+      <input type="text" id="input1" />
+      <input type="submit" id="input2" />
+    </form>
+
+    <script>
+      let frm = document.getElementsByTagName("form")[0];
+      let head = document.getElementsByTagName("h1")[0];
+      let ip2 = document.getElementById("input2");
+      function fact(e) {
+        e.preventDefault();
+        let ip1 = document.getElementById("input1");
+        let ans = 1;
+        for (let i = 1; i <= ip1.value; i++) {
+          ans *= i;
+        }
+        head.innerHTML = ans;
+        return head.innerHTML;
+      }
+      ip2.addEventListener("click", fact);
+    </script>
+  </body>
+</html>

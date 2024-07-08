@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <form>
+      <label for="input1"></label>
+      <input type="text" id="input1" />
+      <input type="submit" />
+    </form>
+
+    <script>
+      let frm = document.getElementsByTagName("form")[0];
+      let head = document.getElementsByTagName("h1")[0];
+      function fun(e) {
+        e.preventDefault();
+        let ip1 = document.getElementById("input1");
+        if (ip1.value % 2 == 0) {
+          head.innerHTML = `${ip1.value} is even number`;
+          return head.innerHTML;
+        } else {
+          head.innerHTML = `${ip1.value} is odd number`;
+          return head.innerHTML;
+        }
+      }
+      frm.addEventListener("submit", fun);
+    </script>
+  </body>
+</html>

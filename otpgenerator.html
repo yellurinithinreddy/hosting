@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+    <form>
+      <label for="otp">Enter otp length:</label>
+      <input type="text" id="otp" />
+      <input type="submit" />
+    </form>
+
+    <script>
+      let frm = document.getElementsByTagName("form")[0];
+      let ip1 = document.getElementById("otp");
+      let p1 = document.getElementsByTagName("p")[0];
+      console.log(frm, ip1, p1);
+      function gen(e) {
+        e.preventDefault();
+        let k = Math.floor(Math.random() * Math.pow(10, ip1.value));
+        let o = String(k);
+        let n = o.length;
+        if (n == ip1.value) {
+          p1.innerHTML = o;
+          return p1.innerHTML;
+        } else {
+          while (n != ip1.value) {
+            o += Math.floor(Math.random() * 10);
+            n++;
+          }
+          p1.innerHTML = o;
+          return p1.innerHTML;
+        }
+      }
+      frm.addEventListener("submit", gen);
+    </script>
+  </body>
+</html>
