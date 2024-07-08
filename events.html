@@ -15,12 +15,19 @@
       btn.addEventListener("click", color);
       function color() {
         let k = Math.floor(Math.random() * 1000000);
-        head.style.backgroundColor = "#" + k;
-        if (String(k).length != 6) {
-          head.style.backgroundColor = "#" + k * 10;
+        let o = String(k);
+        let n = o.length;
+        if (n == 6) {
+          head.style.backgroundColor = "#" + o;
+          return head.style.backgroundColor;
+        } else {
+          while (n != 6) {
+            o += Math.floor(Math.random() * 10);
+            n++;
+          }
+          head.style.backgroundColor = "#" + o;
           return head.style.backgroundColor;
         }
-        return head.style.backgroundColor;
       }
     </script>
   </body>
