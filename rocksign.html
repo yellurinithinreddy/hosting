@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        margin-top: 15%;
+      }
+      #name {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cd">
+      <form action="./rockpaperscissors.html">
+        <label for="name" style="font-size: 30px"
+          >Enter Your Name to Play:
+        </label>
+        <br /><br />
+        <input type="text" id="name" />
+        <br /><br />
+        <input
+          type="submit"
+          value="Play"
+          style="
+            width: 100px;
+            height: 30px;
+            background-color: #3380ff;
+            color: white;
+            border-radius: 20px;
+          "
+        />
+      </form>
+      <script>
+        let name1 = document.getElementById("name");
+        let frm1 = document.getElementsByTagName("form")[0];
+        frm1.addEventListener("submit", () => {
+          localStorage.setItem("userName", JSON.stringify(name1.value));
+        });
+      </script>
+    </div>
+  </body>
+</html>
