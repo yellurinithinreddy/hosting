@@ -91,7 +91,13 @@
       </div>
       <h1
         class="mb-5"
-        style="background: red; padding: 1rem 5rem; text-wrap: nowrap"
+        style="
+          background-color: beige;
+          border-radius: 10px;
+          padding: 1rem 5rem;
+          text-wrap: nowrap;
+          color: black;
+        "
       >
         Play
       </h1>
@@ -247,6 +253,14 @@
         h1.innerHTML = "Play";
         user1.innerHTML = '<i class="fa-solid fa-hand-back-fist fa-2xl"></i>';
         comp1.innerHTML = '<i class="fa-solid fa-hand-back-fist fa-2xl"></i>';
+        let i = 1;
+        k = setInterval(() => {
+          console.log(i);
+          i++;
+          if (i == 31) {
+            clearInterval(k);
+          }
+        });
       });
     </script>
   </body>

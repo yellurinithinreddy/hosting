@@ -5,50 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      #md {
+        height: 97.6vh;
+        width: 100%;
+        background-image: url(./multimedia/rock.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       #cd {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
         text-align: center;
-        margin-top: 15%;
+        border: 1px solid;
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        border-radius: 10px;
       }
       #name {
         width: 200px;
       }
-      body{
-        background-image: url(./multimedia/r);
-      }
     </style>
   </head>
   <body>
-    <div id="cd">
-      <form action="./rockpaperscissors.html">
-        <label for="name" style="font-size: 30px"
-          >Enter Your Name to Play:
-        </label>
-        <br /><br />
-        <input type="text" id="name" />
-        <br /><br />
-        <input
-          type="submit"
-          value="Play"
-          style="
-            width: 100px;
-            height: 30px;
-            background-color: #3380ff;
-            color: white;
-            border-radius: 20px;
-          "
-        />
-      </form>
-      <script>
-        let name1 = document.getElementById("name");
-        let frm1 = document.getElementsByTagName("form")[0];
-        frm1.addEventListener("submit", () => {
-          localStorage.setItem("userName", JSON.stringify(name1.value));
-        });
-      </script>
+    <div id="md">
+      <div id="cd">
+        <form action="./rockpaperscissors.html">
+          <label for="name" style="font-size: 30px"
+            >Enter Your Name to Play:
+          </label>
+          <br /><br />
+          <input
+            type="text"
+            id="name"
+            style="
+              height: 30px;
+              width: 200px;
+              border-radius: 10px;
+              padding-left: 10px;
+            "
+            placeholder="Enter name"
+          />
+          <br /><br />
+          <input
+            type="submit"
+            value="Play"
+            style="
+              width: 100px;
+              height: 30px;
+              background-color: #3380ff;
+              color: white;
+              border-radius: 20px;
+            "
+          />
+        </form>
+      </div>
     </div>
+    <script>
+      let name1 = document.getElementById("name");
+      let frm1 = document.getElementsByTagName("form")[0];
+      frm1.addEventListener("submit", () => {
+        localStorage.setItem("userName", JSON.stringify(name1.value));
+      });
+    </script>
   </body>
 </html>
