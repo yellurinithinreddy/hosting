@@ -84,6 +84,7 @@
     </style>
   </head>
   <body>
+    <div id="time"></div>
     <div id="cntnr" class="container">
       <div style="display: flex; gap: 100px">
         <h2>USER</h2>
@@ -123,6 +124,7 @@
       let h1 = document.getElementsByTagName("h1")[0];
       let h2 = document.getElementsByTagName("h2")[0];
       let restart1 = document.getElementById("restart");
+      let time1 = document.getElementById("time1");
       let item = localStorage.getItem("userName");
       item1 = JSON.parse(item);
       h2.innerHTML = item1;
@@ -255,12 +257,12 @@
         comp1.innerHTML = '<i class="fa-solid fa-hand-back-fist fa-2xl"></i>';
         let i = 1;
         k = setInterval(() => {
-          console.log(i);
+          time1.innerHTML = i;
           i++;
           if (i == 31) {
             clearInterval(k);
           }
-        });
+        }, 1000);
       });
     </script>
   </body>
